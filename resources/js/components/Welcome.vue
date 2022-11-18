@@ -19,7 +19,7 @@
                 <div class="card-body">
                     <div class="row m-4" v-if="events.length > 0">
                         <div class="col-md-4" v-for="(event,key) in events" :key="key">
-                            <router-link :to='{name:"event",params:{id:event.id}}'>
+                            <router-link :to='{name:"event",params:{id:event.slug}}'>
                                 <div class="card">
                                     <div class="card-body">
                                         <h3>{{ event.title }}</h3>
