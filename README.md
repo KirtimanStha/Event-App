@@ -1,4 +1,4 @@
-<h3 align="center">Event App</h3>
+<h1 align="center">Event App</h1>
 
 
 ## About project
