@@ -1,5 +1,8 @@
 <template>
     <div class="row">
+        <div class="col-12 mb-2 text-end">
+            <router-link to="/event"><button class="btn btn-sm btn-info">Back</button></router-link>
+        </div>
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
