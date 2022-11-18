@@ -1,4 +1,4 @@
-<p align="center">## Event App</p>
+<h3 align="center">Event App</h3>
 
 
 ## About project
