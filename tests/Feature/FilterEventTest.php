@@ -31,9 +31,10 @@ class FilterEventTest extends TestCase
         $payload = [
             'selected' => "0"
         ];
+        $events_count = Event::all()->count();
 
         $response = $this->post('/api/filter', $payload)->decodeResponseJson();
-        $this->assertEquals($response->count(), 100);
+        $this->assertEquals($response->count(), $events_count);
     }
 
     public function test_finished_events()
