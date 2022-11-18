@@ -3,6 +3,8 @@
 
 ## About project
 
+Event App with CRUD functionality of event with TDD.
+
 Stacks used:
 
 - Vue.js as frontend (https://vuejs.org/guide/introduction.html)
