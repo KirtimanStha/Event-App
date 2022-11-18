@@ -2,8 +2,33 @@
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <h5>Single Event</h5>
+                <h5>{{ event.title }}</h5>
+                <br>
+                <p>{{ event.description }}</p>
             </div>
         </div>
     </div>
 </template>
+<script>
+
+export default {
+    name:"event",
+    data(){
+        return {
+            event:''
+        }
+    },
+    mounted(){
+        this.getEvent()
+    },
+    methods:{
+        async getEvent(){
+            await axios.get(`/api/events/${this.$route.params.id}`).then(response=>{
+                this.event = response.data
+            }).catch(error=>{
+                this.event = ''
+            })
+        }
+    }
+}
+</script>
