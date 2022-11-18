@@ -24,4 +24,5 @@ Stacks used:
 - Install dependency from Composer (command: composer install)
 - Install packages from NPM (command: npm install)
 - Config cache - Laravel (command: php artisan config:cache)
+- Compile required assets - Vue (command: npm run dev)
 - Serve the project (command: php artisan serve)
