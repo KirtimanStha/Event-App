@@ -22,6 +22,11 @@ const routes = [
         component: EventCreate
     },
     {
+        name: 'eventShow',
+        path: '/event/show',
+        component: Event
+    },
+    {
         name: 'eventUpdate',
         path: '/event/:id/edit',
         component: EventUpdate
